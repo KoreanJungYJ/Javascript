@@ -2,8 +2,10 @@
     <head></head>
     <body>
         <script>
-            //Person() 객체 생성 및 생성자 함수 정의
+            //Person() 객체 생성 및 생성자 함수 정의 - Person은 생성자 함수이다.
             var Person = function(name, living, age, gender) {
+                // 아래에서 this는 새롭게 작성된 객체( this = new Object(); )를 뜻한다.
+
                 this.name = name;
                 this.living = living;
                 this.age = age;
@@ -12,12 +14,15 @@
                 this.getGender = function() {
                     return this.gender;
                 }
+
+                // new 키원드와 함께 생성자 함수를 호출하면 undefined가 아닌 this가 반환된다.
             }
 
             //Person 객체의 인스턴스 만들고 caden 변수에 저장
             var caden = new Person("정윤재", "용인시", 19, "Male");
 
             console.log(caden);
+            console.log(typeof caden + "\n" + caden.constructor);
             console.log(caden.getGender());
 
 

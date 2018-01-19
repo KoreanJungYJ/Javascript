@@ -1,0 +1,28 @@
+<html>
+    <head></head>
+    <body>
+        <script>
+            var number = new Number(10);
+            var string = new String("Male");
+            var boolean = new Boolean(true);
+            var object = new Object();
+            var array = new Array('foo', 'bar');
+            var func = new Function("x", "y", "return x * y");
+            var date = new Date();
+            var regExp = new RegExp('\bt[a-z]+\b');
+            var error = new Error('Crap!');
+
+            // 만들어진 객체의 생성자가 무엇인지 기록 및 확인
+
+            console.log(number.constructor);
+            console.log(string.constructor);
+            console.log(boolean.constructor);
+            console.log(object.constructor);
+            console.log(array.constructor);
+            console.log(func.constructor);
+            console.log(date.constructor);
+            console.log(regExp.constructor);
+            console.log(error.constructor);
+        </script>
+    </body>
+</html>
