@@ -1,0 +1,28 @@
+<html><head></head><body>
+    <script>
+        var arr = ['Hello'];
+        console.log(arr);
+        var arr2 = new Array('Hello');
+        var arr3 = arr2;
+        console.log(arr2);
+
+        console.log(arr === arr2);
+        console.log(arr3 === arr2);
+
+        var string = 'Hello';
+        console.log(string + "는 원시값");
+        var string2 = new String('Hello');
+        console.log(string2 + "는 객체");
+
+        console.log(string.toUpperCase());
+        //원시값에 String메서드가 잘 적용되는 이유는 임시로 래퍼객체로 변환되기 때문
+        //작업이 끝나면 다시 원시값으로 돌아온다.
+
+        var myArr = new Array();
+        myArr.prop = 'test';
+
+        console.log(myArr.prop);
+        console.log("위는 객체에 속성을 추가하느 예제이다." + "\n" 
+        + "원시 자료형을 제외한 모든 네이티브 생성자에도 적용 가능하다!");
+    </script>
+</body></html>
