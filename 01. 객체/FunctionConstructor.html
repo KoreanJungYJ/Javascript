@@ -1,0 +1,10 @@
+<html><head></head><body>
+    <script>
+        var CustomConstructor = function CustomConstructor() {return 'PrintIt!';};
+        var instanceOfCustomObject = new CustomConstructor();
+        
+        console.log(instanceOfCustomObject.constructor === CustomConstructor);
+
+        console.log(instanceOfCustomObject.constructor);
+    </script>
+</body></html>

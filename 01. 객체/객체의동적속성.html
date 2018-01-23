@@ -1,0 +1,18 @@
+<html><head></head><body>
+    <script>
+        String.augmentedProperties = [];
+
+        if(!String.prototype.trimIT) {
+            String.prototype.trimIT = function() {
+                return this.replace(/^\s+|\s+$/g, '');
+            }
+
+            String.augmentedProperties.push('trimIT');
+        }
+
+        var myString = ' trim it ! ';
+        console.log(myString.trimIT());
+
+        console.log(String.augmentedProperties.join());
+    </script>
+</body></html>
